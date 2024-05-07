@@ -1,0 +1,105 @@
+/* Root Css */
+:root {
+    --bg-prm: rgb(129, 173, 255);
+    --bg-2: rgb(92, 116, 255);
+    --bg-3: rgb(3, 134, 255);
+    --text-black: rgba(0, 0, 0, 0.849);
+    --text-white: rgba(255, 255, 255, 0.97);
+}
+
+body {
+    width: 100%;
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+    height: 1000vh;
+    font-family: "Poppins", sans-serif;
+}
+.navbar-f.sticky {
+    padding: 0.3rem 0;
+    background-color: rgba(3, 134, 255, 0.71);
+}
+/* Navbar Start */
+.navbar-f {
+    padding: 0.6rem 0;
+    right: 0;
+    background-color: var(--bg-3);
+    transition: 0.4s ease;
+    z-index: 10;
+}
+.navbar-f .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-link {
+    width: 60%;
+    height: 100vh;
+    display: block;
+    top: 100%;
+    right: -100%;
+    background-color: var(--bg-prm);
+    list-style: none;
+    padding: 0;
+    transition: 0.4s linear;
+}
+.navbar-link.active {
+    right: 0;
+}
+.navbar-link li {
+    display: flex;
+    flex-direction: column;
+}
+.navbar-link li > a {
+    color: var(--text-black);
+    padding: 0.4rem 0.5rem;
+    margin-top: 0.4rem;
+    text-decoration: none;
+    display: block;
+}
+.navbar-link li > a:hover {
+    color: var(--text-white);
+    background-color: rgba(0, 20, 230, 0.079);
+}
+.dropdown-menu a:hover {
+    color: var(--text-white) !important;
+    background-color: rgba(0, 3, 33, 0.31) !important;
+}
+
+.navbar-fitur {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+.f-nav {
+    margin-top: 0.4rem;
+}
+
+.search-navbar {
+    position: absolute;
+    top: 100%;
+    left: 5vw;
+    width: 90%;
+    transform: scaleY(0);
+    transform-origin: top;
+    margin-top: 0.2rem;
+    transition: 0.4s linear;
+}
+.search-navbar.active {
+    transform: scaleY(1);
+}
+/* Navbar End */
+/* Header Start */
+.header-slide {
+    width: 96%;
+    margin: 4.8rem auto 0 !important;
+}
+
+.img-slide {
+    border-radius: 8px;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+}
+/* header End */
