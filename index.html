@@ -30,6 +30,13 @@
             crossorigin="anonymous"
         />
         <!--### -->
+        <!-- Bootstrap Js -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"
+        ></script>
+        <!--## -->
     </head>
     <body>
         <!-- Navbar Start -->
@@ -39,9 +46,11 @@
                     >Tedi Store</a
                 >
                 <ul class="navbar-link position-absolute">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Transaksi</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#" class="link-nav">Home</a></li>
+                    <li>
+                        <a href="#" class="transaksi-btn link-nav">Transaksi</a>
+                    </li>
+                    <li><a href="#" class="link-nav">About</a></li>
                     <li class="nav-item dropdown">
                         <a
                             class="nav-link dropdown-toggle"
@@ -54,18 +63,24 @@
                         </a>
                         <ul class="dropdown-menu p-0 w-100">
                             <li>
-                                <a class="dropdown-item" href="#">Top up</a>
+                                <a class="dropdown-item link-nav" href="#"
+                                    >Top up</a
+                                >
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#">Tagihan</a>
+                                <a class="dropdown-item link-nav" href="#"
+                                    >Tagihan</a
+                                >
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#">Voucher</a>
+                                <a class="dropdown-item link-nav" href="#"
+                                    >Voucher</a
+                                >
                             </li>
                         </ul>
                     </li>
-                    <li><a href="#">Masuk</a></li>
-                    <li><a href="#">Daftar</a></li>
+                    <li><a href="#" class="link-nav">Masuk</a></li>
+                    <li><a href="#" class="link-nav">Daftar</a></li>
                 </ul>
                 <div class="navbar-fitur">
                     <a href="#" class="search-btn f-nav">
@@ -293,23 +308,110 @@
                 </a>
                 <a href="#" class="box-game">
                     <img
-                        src="assets/image/topup/undawn.jpg"
-                        alt=""
-                        class="image-game"
-                    />
-                    <span class="title-game">Garena Undawn</span>
-                </a>
-                <a href="#" class="box-game">
-                    <img
                         src="assets/image/topup/spotify.jpg"
                         alt=""
                         class="image-game"
                     />
                     <span class="title-game">Spotify</span>
                 </a>
+                <a href="#" class="box-game">
+                    <img
+                        src="assets/image/topup/brawl.jpg"
+                        alt=""
+                        class="image-game"
+                    />
+                    <span class="title-game">Brawl</span>
+                </a>
+                <a href="#" class="box-game">
+                    <img
+                        src="assets/image/topup/vidio.jpg"
+                        alt=""
+                        class="image-game"
+                    />
+                    <span class="title-game">Vidio</span>
+                </a>
+                <a href="#" class="box-game">
+                    <img
+                        src="assets/image/topup/nimotv.png"
+                        alt=""
+                        class="image-game"
+                    />
+                    <span class="title-game">NimoTv</span>
+                </a>
             </div>
         </section>
         <!-- Popular End -->
+        <!-- Game Start -->
+        <section class="new-game">
+            <h6 class="h6 heading-game">New Game</h6>
+            <div class="container">
+                <a href="#" class="box-game">
+                    <img
+                        src="assets/image/topup/ID_Metal-Slug_22prcntOFF-tile.jpg"
+                        alt=""
+                        class="image-game"
+                    />
+                    <span class="title-game">Metal Slug</span>
+                </a>
+                <a href="#" class="box-game">
+                    <img
+                        src="assets/image/topup/punishing.jpg"
+                        alt=""
+                        class="image-game"
+                    />
+                    <span class="title-game">Pukimak</span>
+                </a>
+                <a href="#" class="box-game">
+                    <img
+                        src="assets/image/topup/ag_tile.png"
+                        alt=""
+                        class="image-game"
+                    />
+                    <span class="title-game">Tile</span>
+                </a>
+                <a href="#" class="box-game">
+                    <img
+                        src="assets/image/topup/lifeafter.jpeg"
+                        alt=""
+                        class="image-game"
+                    />
+                    <span class="title-game">Life After</span>
+                </a>
+                <a href="#" class="box-game">
+                    <img
+                        src="assets/image/topup/aether.jpg"
+                        alt=""
+                        class="image-game"
+                    />
+                    <span class="title-game">Aether</span>
+                </a>
+                <a href="#" class="box-game">
+                    <img
+                        src="assets/image/topup/pb.jpg"
+                        alt=""
+                        class="image-game"
+                    />
+                    <span class="title-game">Point Blank</span>
+                </a>
+                <a href="#" class="box-game">
+                    <img
+                        src="assets/image/topup/undawn.jpg"
+                        alt=""
+                        class="image-game"
+                    />
+                    <span class="title-game">Undawn</span>
+                </a>
+                <a href="#" class="box-game">
+                    <img
+                        src="assets/image/topup/tsubasa.png"
+                        alt=""
+                        class="image-game"
+                    />
+                    <span class="title-game">Tsubasa</span>
+                </a>
+            </div>
+        </section>
+        <!-- Game End -->
         <!-- About-Box Start -->
         <section class="about-box">
             <div class="container">
@@ -380,19 +482,35 @@
             </div>
         </section>
         <!-- About-Box End -->
+        <!-- footer start -->
+        <footer class="footer bg-primary-subtle">
+            <p class="copyright">copyright © 2024 | @tedikun</p>
+        </footer>
+        <!-- footer End -->
+        <!-- Transaksi Start -->
+        <section class="transaksi" id="transaksi">
+            <box-icon
+                name="x-circle"
+                color="black"
+                size="md"
+                class="icn-close-modal"
+            ></box-icon>
+            <h6 class="h6 heading-transaksi fw-bolder fs-6">
+                Transaksi <span class="text-primary">Anda</span>
+            </h6>
+            <div class="container">
+                <p class="text-center text-bg-secondary fs-6 fw-normal mt-4">
+                    Belum Ada Transaksi Bosqu
+                </p>
+            </div>
+        </section>
+        <!-- Transaksi End -->
 
         <!-- Javascript -->
         <script
             type="text/javascript"
             charset="utf-8"
             src="assets/script/script.js"
-        ></script>
-        <!--## -->
-        <!-- Bootstrap Js -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"
         ></script>
         <!--## -->
     </body>

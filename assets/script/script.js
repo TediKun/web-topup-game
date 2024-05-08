@@ -11,6 +11,12 @@ navtoggle.addEventListener("click", function (e) {
     navLink.classList.toggle("active");
     e.preventDefault();
 });
+const linkNav = document.querySelectorAll(".link-nav");
+linkNav.forEach(function (val, i) {
+    linkNav[i].addEventListener("click", () => {
+        navLink.classList.remove("active");
+    });
+});
 // ####
 // Search Navbar
 const searchNavbar = document.querySelector(".search-navbar");
@@ -29,5 +35,20 @@ document.addEventListener("click", e => {
     if (!searchNavbar.contains(e.target) && !btnSearch.contains(e.target)) {
         searchNavbar.classList.remove("active");
     }
+});
+// ####
+// #### Transaksi Modal
+const transaksiMenu = document.querySelector(".transaksi");
+const btnTransaksi = document.querySelector(".transaksi-btn");
+const btnTransaksiClose = document.querySelector(".icn-close-modal");
+
+btnTransaksi.addEventListener("click", function (e) {
+    transaksiMenu.classList.add("active");
+    document.body.classList.add("active");
+    e.preventDefault();
+});
+btnTransaksiClose.addEventListener("click", function (e) {
+    transaksiMenu.classList.remove("active");
+    document.body.classList.remove("active");
 });
 // ####
