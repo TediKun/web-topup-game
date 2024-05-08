@@ -93,7 +93,7 @@ body {
 /* Header Start */
 .header-slide {
     width: 96%;
-    margin: 4.8rem auto 0 !important;
+    margin: 4.8rem auto 0.5rem !important;
 }
 
 .img-slide {
@@ -103,3 +103,135 @@ body {
     object-position: center;
 }
 /* header End */
+/* Menu Start */
+.menu {
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.menu .heading-menu,
+.popular .heading-popular {
+    margin-left: 0.8rem;
+    margin-bottom: 1rem;
+    padding-left: 0.4rem;
+    border-left: 0.2rem solid var(--bg-3);
+}
+.menu .container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(146px, 1fr));
+    gap: 0.2rem;
+}
+.box-menu {
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-3);
+    padding: 0.6rem 0.4rem;
+    border-radius: 0.4rem;
+    text-decoration: none;
+}
+.box-menu:hover {
+    background-color: rgb(82, 172, 255);
+}
+.box-menu .content-menu .title-product-menu {
+    margin-top: 0.3rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-black);
+}
+/* Menu End */
+/*  Popular Start */
+.popular {
+    width: 100%;
+    padding: 1rem 0;
+    margin-top: 0.5rem;
+}
+.box-game .image-game {
+    width: 100%;
+    border-radius: 0.2rem;
+}
+.popular .container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+    gap: 0.4rem;
+}
+.box-game {
+    background-color: var(--bg-3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-black);
+    font-size: 0.6rem;
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+    border-radius: 0.2rem;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.13);
+}
+.box-game span {
+    padding-top: 0.4rem;
+}
+/*  Popular End */
+/*  Box About Start */
+.about-box {
+    width: 100%;
+    padding: 1rem 0;
+}
+.img-box-about {
+    width: 100px;
+}
+.about-box .container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.2rem;
+    background-color: rgb(119, 190, 255);
+    border-radius: 0.2rem;
+    padding: 0.8rem 0.4rem;
+}
+.about-box .right .parent-box-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+}
+.about-box .right .parent-box-right .box-about-right {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.6rem 0.8rem;
+    gap: 0.2rem;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.13);
+    border-radius: 0.2rem;
+}
+.box-about-right .text-about-right {
+    font-size: 0.6rem;
+    font-weight: 600;
+}
+.about-box .sosmed-box-about {
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sosmed-box-about .sosmed-link {
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+    text-decoration: none;
+}
+.about-box .left .content-box-left {
+    padding-top: 1rem;
+}
+.content-box-left .heading-box {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.content-box-left .paragraft-box-about {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+/*  Box About End */
