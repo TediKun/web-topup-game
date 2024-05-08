@@ -42,7 +42,9 @@
         <!-- Navbar Start -->
         <nav class="navbar-f position-fixed w-100 top-0">
             <div class="container">
-                <a href="#" class="logo-navbar navbar-brand fw-bold fs-4"
+                <a
+                    href="#"
+                    class="logo-navbar navbar-brand fw-bold fs-4 text-white"
                     >Tedi Store</a
                 >
                 <ul class="navbar-link position-absolute">
@@ -50,7 +52,7 @@
                     <li>
                         <a href="#" class="transaksi-btn link-nav">Transaksi</a>
                     </li>
-                    <li><a href="#" class="link-nav">About</a></li>
+                    <li><a href="#about-box" class="link-nav">About</a></li>
                     <li class="nav-item dropdown">
                         <a
                             class="nav-link dropdown-toggle"
@@ -79,8 +81,8 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a href="#" class="link-nav">Masuk</a></li>
-                    <li><a href="#" class="link-nav">Daftar</a></li>
+                    <li><a href="login.html" class="link-nav">Masuk</a></li>
+                    <li><a href="sign-up.html" class="link-nav">Daftar</a></li>
                 </ul>
                 <div class="navbar-fitur">
                     <a href="#" class="search-btn f-nav">
@@ -88,6 +90,7 @@
                             name="search"
                             size="sm"
                             class="mt-1 icn-navbar"
+                            color="white"
                         ></box-icon>
                     </a>
                     <a href="#" class="bars-menu f-nav">
@@ -95,6 +98,7 @@
                             name="menu-alt-right"
                             size="md"
                             class="mt-1"
+                            color="white"
                         ></box-icon>
                     </a>
                 </div>
@@ -196,25 +200,45 @@
             <h6 class="h6 heading-menu">Menu</h6>
             <div class="container">
                 <a href="#" class="box-menu">
-                    <box-icon name="mobile-alt"></box-icon>
+                    <box-icon name="mobile-alt" color="white"></box-icon>
                     <div class="content-menu">
                         <h6 class="title-product-menu">Pulsa & Paket Data</h6>
                     </div>
                 </a>
                 <a href="#" class="box-menu">
-                    <box-icon name="bar-chart-alt"></box-icon>
+                    <box-icon name="bar-chart-alt" color="white"></box-icon>
                     <div class="content-menu">
                         <h6 class="title-product-menu">Top Up Game</h6>
                     </div>
                 </a>
                 <a href="#" class="box-menu">
-                    <box-icon name="detail"></box-icon>
+                    <box-icon name="detail" color="white"></box-icon>
                     <div class="content-menu">
                         <h6 class="title-product-menu">Tagihan Prabayar</h6>
                     </div>
                 </a>
                 <a href="#" class="box-menu">
-                    <box-icon name="category"></box-icon>
+                    <box-icon
+                        type="solid"
+                        name="coupon"
+                        color="white"
+                    ></box-icon>
+                    <div class="content-menu">
+                        <h6 class="title-product-menu">Voucher</h6>
+                    </div>
+                </a>
+                <a href="#" class="box-menu">
+                    <box-icon
+                        type="solid"
+                        name="discount"
+                        color="white"
+                    ></box-icon>
+                    <div class="content-menu">
+                        <h6 class="title-product-menu">Flash Sale</h6>
+                    </div>
+                </a>
+                <a href="#" class="box-menu">
+                    <box-icon name="category" color="white"></box-icon>
                     <div class="content-menu">
                         <h6 class="title-product-menu">Lihat Semua</h6>
                     </div>
@@ -413,7 +437,7 @@
         </section>
         <!-- Game End -->
         <!-- About-Box Start -->
-        <section class="about-box">
+        <section class="about-box" id="about-box">
             <div class="container">
                 <div class="left">
                     <img
@@ -422,8 +446,8 @@
                         class="img-box-about"
                     />
                     <div class="content-box-left">
-                        <h6 class="h6 heading-box">Tedi Store</h6>
-                        <p class="paragraft-box-about">
+                        <h6 class="h6 heading-box text-white">Tedi Store</h6>
+                        <p class="text-white paragraft-box-about">
                             Lorem ipsum dolor sit amet, consectetur adipisicing
                             elit. Veniam architecto enim voluptatibus aperiam
                             ipsum nesciunt a repellat omnis, quas maiores. Ipsa
@@ -484,7 +508,7 @@
         <!-- About-Box End -->
         <!-- footer start -->
         <footer class="footer bg-primary-subtle">
-            <p class="copyright">copyright © 2024 | @tedikun</p>
+            <p class="copyright text-black-50">copyright © 2024 | @tedikun</p>
         </footer>
         <!-- footer End -->
         <!-- Transaksi Start -->

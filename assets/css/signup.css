@@ -1,0 +1,33 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+body {
+    width: 100%;
+    position: fixed;
+}
+.navbar-l {
+    padding: 0.6rem 0;
+    background-color: rgb(3, 134, 255);
+    right: 0;
+    transition: 0.4s ease;
+}
+.box-login {
+    width: 90%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.207);
+    margin: 20% auto 0;
+    padding: 2rem;
+    border-radius: 0.3rem;
+}
+@media (min-width: 768px) {
+    .box-login {
+        width: 90%;
+        max-width: 500px;
+    }
+}
+@media (min-width: 1024px) {
+    .box-login {
+        width: 90%;
+        max-width: 600px;
+        margin: 10% auto;
+    }
+}

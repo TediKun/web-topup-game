@@ -4,6 +4,7 @@
     --bg-2: rgb(92, 116, 255);
     --bg-3: rgb(3, 134, 255);
     --text-black: rgba(0, 0, 0, 0.849);
+    --color-primary: rgba(255, 255, 255, 0.916);
     --text-white: rgba(255, 255, 255, 0.97);
 }
 * {
@@ -57,15 +58,19 @@ body.active {
     flex-direction: column;
 }
 .navbar-link li > a {
-    color: var(--text-black);
+    color: var(--color-primary);
     padding: 0.4rem 0.5rem;
     margin-top: 0.4rem;
     text-decoration: none;
     display: block;
+    font-size: 0.9rem;
 }
 .navbar-link li > a:hover {
-    color: var(--text-white);
+    color: var(--text-black);
     background-color: rgba(0, 20, 230, 0.079);
+}
+.dropdown-menu a {
+    color: var(--text-black) !important;
 }
 .dropdown-menu a:hover {
     color: var(--text-white) !important;
@@ -149,7 +154,7 @@ body.active {
     margin-left: 0.2rem;
     font-size: 0.6rem;
     font-weight: 600;
-    color: var(--text-black);
+    color: var(--color-primary);
 }
 /* Menu End */
 /*  Popular Start */
@@ -177,7 +182,7 @@ body.active {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: var(--text-black);
+    color: var(--color-primary);
     font-size: 0.6rem;
     font-weight: 600;
     padding-bottom: 0.5rem;
@@ -300,3 +305,77 @@ body.active {
     top: 1.4rem;
 }
 /*  Transaksi End */
+
+/* ##
+Responsive
+## */
+@media (min-width: 640px) {
+    /* Navbar */
+    .navbar-link {
+        width: 40%;
+    }
+    .menu .heading-menu,
+    .popular .heading-popular,
+    .new-game .heading-game {
+        margin-left: 13vw;
+    }
+    /*     ## */
+    .popular .container,
+    .new-game .container {
+        grid-template-columns: repeat(auto-fit, minmax(78px, 1fr));
+        gap: 0.4rem;
+    }
+}
+@media (min-width: 768px) {
+    /* Navbar */
+    .navbar-link {
+        width: 30%;
+    }
+    .menu .heading-menu,
+    .popular .heading-popular,
+    .new-game .heading-game {
+        margin-left: 13vw;
+    }
+    /*     ## */
+    .popular .container,
+    .new-game .container {
+        grid-template-columns: repeat(auto-fit, minmax(86px, 1fr));
+        gap: 0.4rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    /* Navbar */
+    .navbar-link {
+        width: 32%;
+    }
+    .menu .heading-menu,
+    .popular .heading-popular,
+    .new-game .heading-game {
+        margin-left: 4vw;
+    }
+    /*     ## */
+    .popular .container,
+    .new-game .container {
+        grid-template-columns: repeat(auto-fit, minmax(98px, 1fr));
+        gap: 0.4rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    /* Navbar */
+    .navbar-link {
+        width: 35%;
+    }
+    .menu .heading-menu,
+    .popular .heading-popular,
+    .new-game .heading-game {
+        margin-left: 6vw;
+    }
+    /*     ## */
+    .popular .container,
+    .new-game .container {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 0.4rem;
+    }
+}
