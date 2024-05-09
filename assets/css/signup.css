@@ -17,6 +17,7 @@ body {
     margin: 20% auto 0;
     padding: 2rem;
     border-radius: 0.3rem;
+    overflow-y: scroll;
 }
 @media (min-width: 768px) {
     .box-login {
